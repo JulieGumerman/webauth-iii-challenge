@@ -1,0 +1,27 @@
+{
+  "name": "webauth-iii-challenge",
+  "version": "1.0.0",
+  "description": "## Topics",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulieGumerman/webauth-iii-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulieGumerman/webauth-iii-challenge/issues"
+  },
+  "homepage": "https://github.com/JulieGumerman/webauth-iii-challenge#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.19.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
