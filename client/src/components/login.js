@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Nav from "./nav.js";
 
 const Login = props => {
     const [ returningUser, setReturningUser ] = useState({ username: "", password: ""})
@@ -24,6 +25,7 @@ const Login = props => {
 
     return (
         <div>
+            <Nav />
             <h1>Just your friendly neighborhood login page</h1>
             <form onSubmit={(e) => submitReturningUser(e, returningUser)}>
                 <label>

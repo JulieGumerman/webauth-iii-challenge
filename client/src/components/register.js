@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 
+import Nav from "./nav";
+
 
 const Register = props => {
     const [ newUser, setNewUser ] = useState({ username: "", password: "", department: ""})
@@ -21,6 +23,7 @@ const Register = props => {
 
     return (
         <div>
+            <Nav />
             <h1>Register page</h1>
             <form onSubmit={e => handleSubmit(e, newUser)}>
                 <label> 
