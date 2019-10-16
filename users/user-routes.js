@@ -2,6 +2,7 @@ const express = require("express");
 const bcrypt = require("bcryptjs");
 const userRouter = express.Router();
 const Users = require("./user-model.js");
+const restricted = require("../auth/restricted.js")
 const generateToken = require("../auth/generateToken")
 userRouter.get("/", (req, res) => {
     res.send("ready to go...")
@@ -38,5 +39,14 @@ userRouter.post("/login", (req, res) => {
     })
 
 })
+
+userRouter.get("/users", restricted, (req, res) => {
+    Users.find()
+        .then(users => res.status(200).json(users))
+        .catch(err => res.status(500).json({ message: "Users not accessible at this time."}))
+
+})
+
+
 
 module.exports = userRouter;
