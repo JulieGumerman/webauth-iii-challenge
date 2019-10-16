@@ -19,7 +19,8 @@
   "homepage": "https://github.com/JulieGumerman/webauth-iii-challenge#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "knex": "^0.19.5"
+    "knex": "^0.19.5",
+    "sqlite3": "^4.1.0"
   },
   "devDependencies": {
     "nodemon": "^1.19.4"
